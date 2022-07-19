@@ -1,4 +1,5 @@
 @import url(cores.css);
+@import url(botoes.css);
 
 :root {
     /* Raio da borda padrão*/
@@ -243,6 +244,9 @@ figcaption,
     }
 
     .bg-superficie-var.elev5 {
-        background-color: #635B54;
+        background-image: linear-gradient(
+            rgba(239, 237, 234, 0.12),
+            rgba(239, 237, 234, 0.12)
+        );
     }
 }

@@ -1,0 +1,649 @@
+@font-face {
+    font-family: "correios";
+    src: url("../font/correios.eot?9900571");
+    src: url("../font/correios.eot?9900571#iefix") format("embedded-opentype"),
+        url("../font/correios.woff2?9900571") format("woff2"),
+        url("../font/correios.woff?9900571") format("woff"),
+        url("../font/correios.ttf?9900571") format("truetype"),
+        url("../font/correios.svg?9900571#correios") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'correios';
+    src: url('../font/correios.svg?9900571#correios') format('svg');
+  }
+}
+*/
+[class^="ic-"]:before,
+[class*=" ic-"]:before {
+    font-family: "correios";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1.5rem;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1.5rem;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+
+    /* you can be more comfortable with increased icons size */
+    font-size: 150%;
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.ic-adicionar-circulo:before {
+    content: "\e800";
+} /* '' */
+.ic-agencia:before {
+    content: "\e801";
+} /* '' */
+.ic-agencia-2:before {
+    content: "\e802";
+} /* '' */
+.ic-agencia-favorita:before {
+    content: "\e803";
+} /* '' */
+.ic-agenda:before {
+    content: "\e804";
+} /* '' */
+.ic-agendamento:before {
+    content: "\e805";
+} /* '' */
+.ic-ajuste-horizontal:before {
+    content: "\e806";
+} /* '' */
+.ic-ajustes:before {
+    content: "\e807";
+} /* '' */
+.ic-ajuste-vertical:before {
+    content: "\e808";
+} /* '' */
+.ic-alerta:before {
+    content: "\e809";
+} /* '' */
+.ic-alto-contraste:before {
+    content: "\e80a";
+} /* '' */
+.ic-ampulheta:before {
+    content: "\e80b";
+} /* '' */
+.ic-ampulheta-base:before {
+    content: "\e80c";
+} /* '' */
+.ic-ampulheta-topo:before {
+    content: "\e80d";
+} /* '' */
+.ic-arquivos:before {
+    content: "\e80e";
+} /* '' */
+.ic-atendimento:before {
+    content: "\e80f";
+} /* '' */
+.ic-atendimento-2:before {
+    content: "\e810";
+} /* '' */
+.ic-atomo:before {
+    content: "\e811";
+} /* '' */
+.ic-aviaozinho-voltar:before {
+    content: "\e812";
+} /* '' */
+.ic-aviaozionho-espera:before {
+    content: "\e813";
+} /* '' */
+.ic-aviso-recebimento:before {
+    content: "\e814";
+} /* '' */
+.ic-backspace:before {
+    content: "\e815";
+} /* '' */
+.ic-balao:before {
+    content: "\e816";
+} /* '' */
+.ic-busca-cep:before {
+    content: "\e817";
+} /* '' */
+.ic-cadeado:before {
+    content: "\e818";
+} /* '' */
+.ic-cadeado-aberto:before {
+    content: "\e819";
+} /* '' */
+.ic-caixa:before {
+    content: "\e81a";
+} /* '' */
+.ic-caixa-aberta:before {
+    content: "\e81b";
+} /* '' */
+.ic-calculadora:before {
+    content: "\e81c";
+} /* '' */
+.ic-camera:before {
+    content: "\e81d";
+} /* '' */
+.ic-caminhao:before {
+    content: "\e81e";
+} /* '' */
+.ic-caminhao-seta:before {
+    content: "\e81f";
+} /* '' */
+.ic-cancelar-pacote:before {
+    content: "\e820";
+} /* '' */
+.ic-carrinho:before {
+    content: "\e821";
+} /* '' */
+.ic-carta:before {
+    content: "\e822";
+} /* '' */
+.ic-carta-aberta:before {
+    content: "\e823";
+} /* '' */
+.ic-cartao:before {
+    content: "\e824";
+} /* '' */
+.ic-carta-vazia:before {
+    content: "\e825";
+} /* '' */
+.ic-carteira:before {
+    content: "\e826";
+} /* '' */
+.ic-catalogo:before {
+    content: "\e827";
+} /* '' */
+.ic-categorias:before {
+    content: "\e828";
+} /* '' */
+.ic-categorias-2:before {
+    content: "\e829";
+} /* '' */
+.ic-celular:before {
+    content: "\e82a";
+} /* '' */
+.ic-certificado-digital:before {
+    content: "\e82b";
+} /* '' */
+.ic-cilindro:before {
+    content: "\e82c";
+} /* '' */
+.ic-clique-retire:before {
+    content: "\e82d";
+} /* '' */
+.ic-codigo-barra:before {
+    content: "\e82e";
+} /* '' */
+.ic-compartilhar:before {
+    content: "\e82f";
+} /* '' */
+.ic-compartilhar-2:before {
+    content: "\e830";
+} /* '' */
+.ic-configuracoes:before {
+    content: "\e831";
+} /* '' */
+.ic-contrato:before {
+    content: "\e832";
+} /* '' */
+.ic-conversa:before {
+    content: "\e833";
+} /* '' */
+.ic-cortesia:before {
+    content: "\e834";
+} /* '' */
+.ic-cronometro:before {
+    content: "\e835";
+} /* '' */
+.ic-denuncia:before {
+    content: "\e836";
+} /* '' */
+.ic-destaque:before {
+    content: "\e837";
+} /* '' */
+.ic-destaque-grande:before {
+    content: "\e838";
+} /* '' */
+.ic-diminuir:before {
+    content: "\e839";
+} /* '' */
+.ic-diminuir-circulo:before {
+    content: "\e83a";
+} /* '' */
+.ic-dinheiro:before {
+    content: "\e83b";
+} /* '' */
+.ic-disputa:before {
+    content: "\e83c";
+} /* '' */
+.ic-disputa-aprovar:before {
+    content: "\e83d";
+} /* '' */
+.ic-documento:before {
+    content: "\e83e";
+} /* '' */
+.ic-documento-adicionar:before {
+    content: "\e83f";
+} /* '' */
+.ic-documento-alerta:before {
+    content: "\e840";
+} /* '' */
+.ic-documentos-alerta:before {
+    content: "\e841";
+} /* '' */
+.ic-documentos-aprovar:before {
+    content: "\e842";
+} /* '' */
+.ic-documento-vincular:before {
+    content: "\e843";
+} /* '' */
+.ic-download:before {
+    content: "\e844";
+} /* '' */
+.ic-duvida:before {
+    content: "\e845";
+} /* '' */
+.ic-duvida-circulo:before {
+    content: "\e846";
+} /* '' */
+.ic-editar:before {
+    content: "\e847";
+} /* '' */
+.ic-empresa:before {
+    content: "\e848";
+} /* '' */
+.ic-enter:before {
+    content: "\e849";
+} /* '' */
+.ic-entrar:before {
+    content: "\e84a";
+} /* '' */
+.ic-enviar-aviaozinho:before {
+    content: "\e84b";
+} /* '' */
+.ic-envio:before {
+    content: "\e84c";
+} /* '' */
+.ic-erlenmeyer:before {
+    content: "\e84d";
+} /* '' */
+.ic-estrela:before {
+    content: "\e84e";
+} /* '' */
+.ic-etiqueta:before {
+    content: "\e84f";
+} /* '' */
+.ic-etiqueta-codigo:before {
+    content: "\e850";
+} /* '' */
+.ic-excluir:before {
+    content: "\e851";
+} /* '' */
+.ic-excluir-agenda:before {
+    content: "\e852";
+} /* '' */
+.ic-excluir-circulo:before {
+    content: "\e853";
+} /* '' */
+.ic-expandir:before {
+    content: "\e854";
+} /* '' */
+.ic-fatura:before {
+    content: "\e855";
+} /* '' */
+.ic-ff-rw:before {
+    content: "\e856";
+} /* '' */
+.ic-filatelia:before {
+    content: "\e857";
+} /* '' */
+.ic-filmadora:before {
+    content: "\e858";
+} /* '' */
+.ic-filtro:before {
+    content: "\e859";
+} /* '' */
+.ic-girar-anti:before {
+    content: "\e85a";
+} /* '' */
+.ic-girar-horario:before {
+    content: "\e85b";
+} /* '' */
+.ic-globo:before {
+    content: "\e85c";
+} /* '' */
+.ic-grafico:before {
+    content: "\e85d";
+} /* '' */
+.ic-grafico-2:before {
+    content: "\e85e";
+} /* '' */
+.ic-grafico-pizza:before {
+    content: "\e85f";
+} /* '' */
+.ic-grupo:before {
+    content: "\e860";
+} /* '' */
+.ic-headset:before {
+    content: "\e861";
+} /* '' */
+.ic-home:before {
+    content: "\e862";
+} /* '' */
+.ic-gaveta:before {
+    content: "\e863";
+} /* '' */
+.ic-home-2:before {
+    content: "\e864";
+} /* '' */
+.ic-identidade:before {
+    content: "\e865";
+} /* '' */
+.ic-imagem:before {
+    content: "\e866";
+} /* '' */
+.ic-importar:before {
+    content: "\e867";
+} /* '' */
+.ic-imprensa:before {
+    content: "\e868";
+} /* '' */
+.ic-imprimir:before {
+    content: "\e869";
+} /* '' */
+.ic-informacao:before {
+    content: "\e86a";
+} /* '' */
+.ic-iphonex:before {
+    content: "\e86b";
+} /* '' */
+.ic-justica:before {
+    content: "\e86c";
+} /* '' */
+.ic-ligar-desligar:before {
+    content: "\e86d";
+} /* '' */
+.ic-link:before {
+    content: "\e86e";
+} /* '' */
+.ic-lista:before {
+    content: "\e86f";
+} /* '' */
+.ic-lista-abrir:before {
+    content: "\e870";
+} /* '' */
+.ic-lista-adicionar:before {
+    content: "\e871";
+} /* '' */
+.ic-lista-fechar:before {
+    content: "\e872";
+} /* '' */
+.ic-lixo:before {
+    content: "\e873";
+} /* '' */
+.ic-localizar:before {
+    content: "\e874";
+} /* '' */
+.ic-locker:before {
+    content: "\e875";
+} /* '' */
+.ic-lupa:before {
+    content: "\e876";
+} /* '' */
+.ic-mapa:before {
+    content: "\e877";
+} /* '' */
+.ic-marcador:before {
+    content: "\e878";
+} /* '' */
+.ic-marcador-grande:before {
+    content: "\e879";
+} /* '' */
+.ic-menu-hamburguer:before {
+    content: "\e87a";
+} /* '' */
+.ic-menu-pontos-hor:before {
+    content: "\e87b";
+} /* '' */
+.ic-menu-pontos-ver:before {
+    content: "\e87c";
+} /* '' */
+.ic-monitor:before {
+    content: "\e87d";
+} /* '' */
+.ic-mouse:before {
+    content: "\e87e";
+} /* '' */
+.ic-mudo:before {
+    content: "\e87f";
+} /* '' */
+.ic-mundo:before {
+    content: "\e880";
+} /* '' */
+.ic-nao-visualizar:before {
+    content: "\e881";
+} /* '' */
+.ic-negocios:before {
+    content: "\e882";
+} /* '' */
+.ic-nova-postagem:before {
+    content: "\e883";
+} /* '' */
+.ic-objeto-favorito:before {
+    content: "\e884";
+} /* '' */
+.ic-objeto-vinculado:before {
+    content: "\e885";
+} /* '' */
+.ic-ordem-alfabetica:before {
+    content: "\e886";
+} /* '' */
+.ic-ordem-inverter:before {
+    content: "\e887";
+} /* '' */
+.ic-ordenar:before {
+    content: "\e888";
+} /* '' */
+.ic-organograma:before {
+    content: "\e889";
+} /* '' */
+.ic-organograma-adicionar:before {
+    content: "\e88a";
+} /* '' */
+.ic-ouvidoria:before {
+    content: "\e88b";
+} /* '' */
+.ic-papeis:before {
+    content: "\e88c";
+} /* '' */
+.ic-pasta:before {
+    content: "\e88d";
+} /* '' */
+.ic-pasta-aberta:before {
+    content: "\e88e";
+} /* '' */
+.ic-pause:before {
+    content: "\e88f";
+} /* '' */
+.ic-pin:before {
+    content: "\e890";
+} /* '' */
+.ic-pin-documento:before {
+    content: "\e891";
+} /* '' */
+.ic-play:before {
+    content: "\e892";
+} /* '' */
+.ic-play-video:before {
+    content: "\e893";
+} /* '' */
+.ic-postagens:before {
+    content: "\e894";
+} /* '' */
+.ic-precos-prazos:before {
+    content: "\e895";
+} /* '' */
+.ic-pre-postagem:before {
+    content: "\e896";
+} /* '' */
+.ic-proibido:before {
+    content: "\e897";
+} /* '' */
+.ic-proximo:before {
+    content: "\e898";
+} /* '' */
+.ic-qr-code:before {
+    content: "\e899";
+} /* '' */
+.ic-radio:before {
+    content: "\e89a";
+} /* '' */
+.ic-rastreamento:before {
+    content: "\e89b";
+} /* '' */
+.ic-recusar:before {
+    content: "\e89c";
+} /* '' */
+.ic-redirecionar:before {
+    content: "\e89d";
+} /* '' */
+.ic-relogio:before {
+    content: "\e89e";
+} /* '' */
+.ic-rfid:before {
+    content: "\e89f";
+} /* '' */
+.ic-sair:before {
+    content: "\e8a0";
+} /* '' */
+.ic-senha:before {
+    content: "\e8a1";
+} /* '' */
+.ic-seta:before {
+    content: "\e8a2";
+} /* '' */
+.ic-seta-circulo:before {
+    content: "\e8a3";
+} /* '' */
+.ic-smile:before {
+    content: "\e8a4";
+} /* '' */
+.ic-smile-alegre:before {
+    content: "\e8a5";
+} /* '' */
+.ic-smile-confuso:before {
+    content: "\e8a6";
+} /* '' */
+.ic-smile-serio:before {
+    content: "\e8a7";
+} /* '' */
+.ic-smile-triste:before {
+    content: "\e8a8";
+} /* '' */
+.ic-som:before {
+    content: "\e8a9";
+} /* '' */
+.ic-som-baixo:before {
+    content: "\e8aa";
+} /* '' */
+.ic-stop:before {
+    content: "\e8ab";
+} /* '' */
+.ic-suspender:before {
+    content: "\e8ac";
+} /* '' */
+.ic-tablet:before {
+    content: "\e8ad";
+} /* '' */
+.ic-teclado:before {
+    content: "\e8ae";
+} /* '' */
+.ic-teclado-2:before {
+    content: "\e8af";
+} /* '' */
+.ic-telefone:before {
+    content: "\e8b0";
+} /* '' */
+.ic-tema:before {
+    content: "\e8b1";
+} /* '' */
+.ic-tributos:before {
+    content: "\e8b2";
+} /* '' */
+.ic-tubo-45:before {
+    content: "\e8b3";
+} /* '' */
+.ic-tubo-ensaio:before {
+    content: "\e8b4";
+} /* '' */
+.ic-tv:before {
+    content: "\e8b5";
+} /* '' */
+.ic-tv-video:before {
+    content: "\e8b6";
+} /* '' */
+.ic-upload:before {
+    content: "\e8b7";
+} /* '' */
+.ic-usuario:before {
+    content: "\e8b8";
+} /* '' */
+.ic-usuario-adicionar:before {
+    content: "\e8b9";
+} /* '' */
+.ic-usuario-excluir:before {
+    content: "\e8ba";
+} /* '' */
+.ic-usuario-vinculado:before {
+    content: "\e8bb";
+} /* '' */
+.ic-vinculo:before {
+    content: "\e8bc";
+} /* '' */
+.ic-visto:before {
+    content: "\e8bd";
+} /* '' */
+.ic-visto-circulo:before {
+    content: "\e8be";
+} /* '' */
+.ic-visto-simples:before {
+    content: "\e8bf";
+} /* '' */
+.ic-visualizar:before {
+    content: "\e8c0";
+} /* '' */
+.ic-a-a-z:before {
+    content: "\e8c1";
+} /* '' */
+.ic-aceitar:before {
+    content: "\e8c2";
+} /* '' */
+.ic-acompanhar:before {
+    content: "\e8c3";
+} /* '' */
+.ic-adicionar-agenda:before {
+    content: "\e8c4";
+} /* '' */
+.ic-adicionar:before {
+    content: "\e8c5";
+} /* '' */
