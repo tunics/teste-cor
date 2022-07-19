@@ -1,0 +1,13 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: var(--espaco-g);
+}
+.card {
+    display: block;
+    padding: var(--espaco-m);
+    max-width: 300px;
+    border-radius: var(--raio-borda);
+}

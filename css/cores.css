@@ -1,0 +1,133 @@
+:root {
+    /*** CORES DE REFERÊNCIA ***/
+    /* Cor Primária */
+    --primario0: #000000;
+    --primario10: #001f33;
+    --primario20: #00416b;
+    --primario30: #006399;
+    --primario40: #0083ca;
+    --primario50: #00a5ff;
+    --primario60: #33b7ff;
+    --primario70: #66c9ff;
+    --primario80: #99dbff;
+    --primario90: #ccedff;
+    --primario95: #e5f6ff;
+    --primario99: #fafdff;
+    --primario100: #ffffff;
+
+    /* Cor Secundária */
+    --secundario0: #000000;
+    --secundario10: #59410d;
+    --secundario20: #8e640b;
+    --secundario30: #cd992b;
+    --secundario40: #ffc20e;
+    --secundario50: #ffd400;
+    --secundario60: #ffe600;
+    --secundario70: #fff34d;
+    --secundario80: #fff780;
+    --secundario90: #fff7b3;
+    --secundario95: #fffde5;
+    --secundario99: #fffffa;
+    --secundario100: #ffffff;
+
+    /* Cor Erro */
+    --erro0: #000000;
+    --erro10: #3d0000;
+    --erro20: #700000;
+    --erro30: #a30000;
+    --erro40: #d50000;
+    --erro50: #ff0a0a;
+    --erro60: #ff3d3d;
+    --erro70: #ff7070;
+    --erro80: #ffa3a3;
+    --erro90: #ffd6d6;
+    --erro95: #ffebeb;
+    --erro99: #fffafa;
+    --erro100: #ffffff;
+
+    /* Cor Neutra */
+    --neutro0: #000000;
+    --neutro10: #1e1d1b;
+    --neutro20: #3f3e3b;
+    --neutro30: #5e5c5a;
+    --neutro40: #72706e;
+    --neutro50: #9b9996;
+    --neutro60: #bab8b5;
+    --neutro70: #dedcd9;
+    --neutro80: #edebe8;
+    --neutro90: #f5f3f0;
+    --neutro95: #fbf9f6;
+    --neutro99: #fdfdfb;
+    --neutro100: #ffffff;
+
+    /* Cor Neutra Variante */
+    --neutro-var0: #000000;
+    --neutro-var10: #3c3630;
+    --neutro-var20: #4c433c;
+    --neutro-var30: #584f46;
+    --neutro-var40: #675d51;
+    --neutro-var50: #807364;
+    --neutro-var60: #998e82;
+    --neutro-var70: #bdb4ab;
+    --neutro-var80: #d1ccc7;
+    --neutro-var90: #efedea;
+    --neutro-var95: #f9f8f6;
+    --neutro-var99: #fdfdfc;
+    --neutro-var100: #ffffff;
+
+    /*** DEFINIÇÃO DAS CORES ***/
+    --cor-primaria: var(--primario30);
+    --cor-sobre-primaria: var(--primario100);
+
+    --cor-secundaria: var(--secundario50);
+    --cor-sobre-secundaria: var(--primario20);
+
+    --cor-erro: var(--erro40);
+    --cor-sobre-erro: var(--erro100);
+
+    --cor-fundo: var(--neutro90);
+    --cor-sobre-fundo: var(--neutro20);
+
+    --cor-superficie: var(--neutro100);
+    --cor-sobre-superficie: var(--neutro20);
+
+    --cor-superficie-var: var(--neutro-var90);
+    --cor-sobre-superficie-var: var(--neutro-var20);
+
+    --cor-contorno: var(--neutro40);
+
+    --cor-linha: var(--neutro-var80);
+
+    /*Alto Contraste*/
+    --cor-ac-preto: #000;
+    --cor-ac-branco: #fff;
+    --cor-ac-amarelo: var(--secundario50);
+}
+
+/*** ESTILOS DO MODO ESCURO ***/
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        /*** DEFINIÇÃO DAS CORES ***/
+        --cor-primaria: var(--primario70);
+        --cor-sobre-primaria: var(--primario20);
+
+        --cor-secundaria: var(--secundario60);
+        --cor-sobre-secundaria: var(--primario10);
+
+        --cor-erro: var(--erro80);
+        --cor-sobre-erro: var(--erro10);
+
+        --cor-fundo: var(--neutro20);
+        --cor-sobre-fundo: var(--neutro90);
+
+        --cor-superficie: var(--neutro20);
+        --cor-sobre-superficie: var(--neutro90);
+
+        --cor-superficie-var: var(--neutro-var20);
+        --cor-sobre-superficie-var: var(--neutro-var90);
+
+        --cor-contorno: var(--neutro50);
+
+        --cor-linha: var(--neutro-var50);
+    }
+}
