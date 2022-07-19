@@ -171,85 +171,81 @@ figcaption,
 
 @media screen and (prefers-color-scheme: dark) {
     .bg-superficie.elev1 {
-        background: linear-gradient(
-                0deg,
-                rgba(245, 243, 240, 0.05),
-                rgba(245, 243, 240, 0.05)
-            ),
-            var(--cor-superficie);
+        background-image: linear-gradient(
+            0deg,
+            rgba(245, 243, 240, 0.05),
+            rgba(245, 243, 240, 0.05)
+        );
     }
+
     .bg-superficie.elev2 {
-        background: linear-gradient(
-                0deg,
-                rgba(245, 243, 240, 0.08),
-                rgba(245, 243, 240, 0.08)
-            ),
-            var(--cor-superficie);
+        background-image: linear-gradient(
+            0deg,
+            rgba(245, 243, 240, 0.08),
+            rgba(245, 243, 240, 0.08)
+        );
     }
+
     .bg-superficie.elev3 {
-        background: linear-gradient(
-                0deg,
-                rgba(245, 243, 240, 0.11),
-                rgba(245, 243, 240, 0.11)
-            ),
-            var(--cor-superficie);
+        background-image: linear-gradient(
+            0deg,
+            rgba(245, 243, 240, 0.11),
+            rgba(245, 243, 240, 0.11)
+        );
     }
+
     .bg-superficie.elev4 {
-        background: linear-gradient(
-                0deg,
-                rgba(245, 243, 240, 0.12),
-                rgba(245, 243, 240, 0.12)
-            ),
-            var(--cor-superficie);
+        background-image: linear-gradient(
+            0deg,
+            rgba(245, 243, 240, 0.12),
+            rgba(245, 243, 240, 0.12)
+        );
     }
+
     .bg-superficie.elev5 {
-        background: linear-gradient(
-                0deg,
-                rgba(245, 243, 240, 0.14),
-                rgba(245, 243, 240, 0.14)
-            ),
-            var(--cor-superficie);
+        background-image: linear-gradient(
+            0deg,
+            rgba(245, 243, 240, 0.14),
+            rgba(245, 243, 240, 0.14)
+        );
     }
 
     .bg-superficie-var.elev1 {
-        background: linear-gradient(
-                0deg,
-                rgba(239, 237, 234, 0.05),
-                rgba(239, 237, 234, 0.05)
-            ),
-            #4c433c;
+        background-image: linear-gradient(
+            0deg,
+            rgba(239, 237, 234, 0.05),
+            rgba(239, 237, 234, 0.05)
+        );
     }
+
     .bg-superficie-var.elev2 {
-        background: linear-gradient(
-                0deg,
-                rgba(239, 237, 234, 0.08),
-                rgba(239, 237, 234, 0.08)
-            ),
-            var(--cor-superficie-var);
+        background-image: linear-gradient(
+            0deg,
+            rgba(239, 237, 234, 0.08),
+            rgba(239, 237, 234, 0.08)
+        );
     }
+
     .bg-superficie-var.elev3 {
-        background: linear-gradient(
-                0deg,
-                rgba(239, 237, 234, 0.11),
-                rgba(239, 237, 234, 0.11)
-            ),
-            var(--cor-superficie-var);
+        background-image: linear-gradient(
+            0deg,
+            rgba(239, 237, 234, 0.11),
+            rgba(239, 237, 234, 0.11)
+        );
     }
+
     .bg-superficie-var.elev4 {
-        background: linear-gradient(
-                0deg,
-                rgba(239, 237, 234, 0.12),
-                rgba(239, 237, 234, 0.12)
-            ),
-            var(--cor-superficie-var);
+        background-image: linear-gradient(
+            0deg,
+            rgba(239, 237, 234, 0.12),
+            rgba(239, 237, 234, 0.12)
+        );
     }
+
     .bg-superficie-var.elev5 {
-        background-blend-mode: lighten;
-        background: linear-gradient(
-                0deg,
-                rgba(239, 237, 234, 0.14),
-                rgba(239, 237, 234, 0.14)
-            ),
-            var(--cor-superficie-var);
+        background-image: linear-gradient(
+            rgba(239, 237, 234, 0.12),
+            rgba(239, 237, 234, 0.12)
+        );
     }
 }
