@@ -243,9 +243,6 @@ figcaption,
     }
 
     .bg-superficie-var.elev5 {
-        background-image: linear-gradient(
-            rgba(239, 237, 234, 0.12),
-            rgba(239, 237, 234, 0.12)
-        );
+        background-color: #635B54;
     }
 }
