@@ -1,0 +1,38 @@
+.btn-pre {
+    background-color: var(--cor-primaria);
+    color: var(--cor-sobre-primaria);
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 8px 24px;
+    gap: 8px;
+    border: none;
+    border-radius: var(--raio-borda);
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    vertical-align: middle;
+}
+
+.btn-pre:hover,
+.btn-pre:active {
+    background-color: var(--primario20);
+}
+
+.btn-pre:focus {
+    outline: 2px solid var(--primario20);
+    outline-offset: -1px;
+    background-color: var(--cor-primaria);
+}
+
+.btn-pre > i {
+    height: 24px;
+}
+
+.btn-pre > i:first-child {
+    margin-left: -0.3em;
+    margin-right: 0;
+}
