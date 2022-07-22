@@ -112,7 +112,7 @@
         --cor-sobre-primaria: var(--primario20);
 
         --cor-secundaria: var(--secundario60);
-        --cor-sobre-secundaria: var(--primario10);
+        --cor-sobre-secundaria: var(--secundario10);
 
         --cor-erro: var(--erro80);
         --cor-sobre-erro: var(--erro10);
@@ -130,4 +130,29 @@
 
         --cor-linha: var(--neutro-var50);
     }
+}
+
+/*** ESTILOS PARA O MODO ALTO-CONTRASTE ***/
+body.alto-contraste {
+    --cor-primaria: var(--cor-ac-amarelo);
+    --cor-sobre-primaria: var(--cor-ac-preto);
+
+    --cor-secundaria: var(--cor-ac-amarelo);
+    --cor-sobre-secundaria: var(--cor-ac-preto);
+
+    --cor-erro: var(--cor-ac-amarelo);
+    --cor-sobre-erro: var(--cor-ac-preto);
+
+    --cor-fundo: var(--cor-ac-preto);
+    --cor-sobre-fundo: var(--cor-ac-branco);
+
+    --cor-superficie: var(--cor-ac-preto);
+    --cor-sobre-superficie: var(--cor-ac-branco);
+
+    --cor-superficie-var: var(--cor-ac-preto);
+    --cor-sobre-superficie-var: var(--cor-ac-branco);
+
+    --cor-contorno: var(--cor-ac-branco);
+
+    --cor-linha: var(--cor-ac-preto);
 }

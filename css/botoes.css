@@ -1,6 +1,4 @@
-.btn-pre {
-    background-color: var(--cor-primaria);
-    color: var(--cor-sobre-primaria);
+button {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
@@ -15,6 +13,33 @@
     font-size: 1rem;
     line-height: 1.5rem;
     vertical-align: middle;
+    transition: 0.2s;
+}
+
+button:focus {
+    transition: 0s;
+}
+
+button > i {
+    height: 24px;
+}
+
+button > i:first-child {
+    margin-left: -0.3em;
+}
+
+button.so-icone {
+    padding: 8px;
+}
+
+button.so-icone > i:first-child {
+    margin-left: 0;
+}
+
+/**** BOTÃO PREENCHIDO ****/
+.btn-pre {
+    background-color: var(--cor-primaria);
+    color: var(--cor-sobre-primaria);
 }
 
 .btn-pre:hover,
@@ -28,11 +53,278 @@
     background-color: var(--cor-primaria);
 }
 
-.btn-pre > i {
-    height: 24px;
+.btn-pre:disabled {
+    background-color: var(--neutro60);
+    color: var(--cor-sobre-fundo);
 }
 
-.btn-pre > i:first-child {
-    margin-left: -0.3em;
-    margin-right: 0;
+/* ↳ Botão preenchido Alternativo */
+.btn-pre.alt {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-sobre-secundaria);
+}
+
+.btn-pre.alt:hover,
+.btn-pre.alt:active {
+    background-color: var(--secundario40);
+}
+
+.btn-pre.alt:focus {
+    outline: 2px solid var(--secundario95);
+    background-color: var(--cor-secundaria);
+}
+
+.btn-pre.alt:disabled {
+    background-color: var(--neutro60);
+    color: var(--cor-sobre-fundo);
+}
+
+/* ↳ Botão Preenchido - Tema Escuro */
+@media screen and (prefers-color-scheme: dark) {
+    .btn-pre:hover,
+    .btn-pre:active {
+        background-color: var(--primario90);
+    }
+
+    .btn-pre:focus {
+        outline: 2px solid var(--primario100);
+    }
+
+    .btn-pre:disabled {
+        background-color: var(--neutro30);
+        color: var(--neutro70);
+    }
+
+    /* ↳ Botão Preenchido Alternativo - Tema Escuro */
+    .btn-pre.alt:hover,
+    .btn-pre.alt:active {
+        background-color: var(--secundario50);
+    }
+
+    .btn-pre.alt:focus {
+        outline: 2px solid var(--primario100);
+    }
+
+    .btn-pre.alt:disabled {
+        background-color: var(--neutro30);
+        color: var(--neutro70);
+    }
+}
+
+/* ↳ Botão Preenchido - Alto Contraste */
+.alto-contraste .btn-pre:hover,
+.alto-contraste .btn-pre:active,
+.alto-contraste .btn-pre.alt:hover,
+.alto-contraste .btn-pre.alt:active {
+    background-color: var(--cor-ac-preto);
+    outline: 1px solid var(--cor-ac-amarelo);
+    color: var(--cor-ac-amarelo);
+}
+
+.alto-contraste .btn-pre:focus,
+.alto-contraste .btn-pre.alt:focus {
+    background-color: var(--cor-ac-preto);
+    color: var(--cor-ac-amarelo);
+}
+
+.alto-contraste .btn-pre:disabled,
+.alto-contraste .btn-pre.alt:disabled {
+    outline: 1px solid var(--cor-ac-branco);
+    background-color: var(--cor-ac-preto);
+    color: var(--cor-ac-branco);
+}
+
+/**** BOTÃO CONTORNO ****/
+.btn-cont {
+    background-color: transparent;
+    color: var(--cor-primaria);
+    outline: 1px solid var(--cor-primaria);
+    outline-offset: -1px;
+}
+
+.btn-cont:hover,
+.btn-cont:active {
+    background-color: rgba(0, 99, 153, 0.08);
+}
+
+.btn-cont:focus {
+    background-color: rgba(0, 99, 153, 0.08);
+    outline: 2px solid var(--primario20);
+    outline-offset: -1px;
+}
+
+.btn-cont:disabled {
+    outline: 1px solid var(--cor-contorno);
+    color: var(--neutro40);
+    background-color: transparent;
+}
+
+/* ↳ Botão Contorno Alternativo */
+.btn-cont.alt {
+    color: var(--cor-secundaria);
+    outline: 1px solid var(--cor-secundaria);
+}
+
+.btn-cont.alt:hover,
+.btn-cont.alt:active {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-sobre-secundaria);
+}
+
+.btn-cont.alt:focus {
+    background-color: transparent;
+    outline: 2px solid var(--secundario95);
+    color: var(--cor-secundaria);
+}
+
+.btn-cont.alt:disabled {
+    outline: 1px solid var(--neutro70);
+    color: var(--neutro70);
+    background-color: transparent;
+}
+
+/* ↳ Botão Contorno - Tema Escuro */
+@media screen and (prefers-color-scheme: dark) {
+    .btn-cont:hover,
+    .btn-cont:active {
+        background-color: rgba(102, 201, 255, 0.08);
+    }
+
+    .btn-cont:focus {
+        background-color: rgba(102, 201, 255, 0.08);
+        outline: 2px solid var(--primario95);
+    }
+
+    .btn-cont:disabled {
+        outline: 1px solid var(--cor-contorno);
+        color: var(--neutro60);
+        background-color: transparent;
+    }
+}
+
+/* ↳ Botão Contorno - Alto Contraste */
+.alto-contraste .btn-cont,
+.alto-contraste .btn-cont.alt {
+    color: var(--cor-ac-amarelo);
+    outline: 1px solid var(--cor-ac-amarelo);
+}
+
+.alto-contraste .btn-cont:hover,
+.alto-contraste .btn-cont:active,
+.alto-contraste .btn-cont.alt:hover,
+.alto-contraste .btn-cont.alt:active {
+    background-color: var(--cor-ac-amarelo);
+    color: var(--cor-ac-preto);
+}
+
+.alto-contraste .btn-cont:focus,
+.alto-contraste .btn-cont.alt:focus {
+    background-color: var(--cor-ac-preto);
+    outline: 2px solid var(--cor-ac-branco);
+    color: var(--cor-ac-amarelo);
+}
+
+.alto-contraste .btn-cont:disabled,
+.alto-contraste .btn-cont.alt:disabled {
+    outline: 1px solid var(--cor-ac-branco);
+    color: var(--cor-ac-branco);
+    background-color: transparent;
+}
+
+/**** BOTÃO TEXTO ****/
+.btn-txt {
+    background-color: transparent;
+    color: var(--cor-primaria);
+    outline-offset: -2px;
+    padding: 8px 16px;
+}
+
+.btn-txt:hover,
+.btn-txt:active {
+    background-color: rgba(0, 99, 153, 0.08);
+}
+
+.btn-txt:focus {
+    background-color: rgba(0, 99, 153, 0.08);
+    outline: 2px solid var(--primario20);
+    outline-offset: -1px;
+}
+
+.btn-txt:disabled {
+    color: var(--neutro40);
+    background-color: transparent;
+}
+
+/* ↳ Botão Texto Alternativo */
+.btn-txt.alt {
+    background-color: transparent;
+    color: var(--cor-secundaria);
+}
+
+.btn-txt.alt:hover,
+.btn-txt.alt:active {
+    outline: 1px solid var(--cor-secundaria);
+}
+
+.btn-txt.alt:focus {
+    outline: 2px solid var(--secundario95);
+}
+
+.btn-txt.alt:disabled {
+    color: var(--neutro70);
+}
+
+.btn-txt.alt:disabled:hover {
+    outline: 0px;
+}
+
+/* ↳ Botão Texto - Tema Escuro */
+@media screen and (prefers-color-scheme: dark) {
+    .btn-txt:hover,
+    .btn-txt:active {
+        background-color: rgba(102, 201, 255, 0.08);
+    }
+
+    .btn-txt:focus {
+        background-color: rgba(102, 201, 255, 0.08);
+        outline: 2px solid var(--primario95);
+        outline-offset: -1px;
+    }
+
+    .btn-txt:disabled {
+        color: var(--neutro60);
+        background-color: transparent;
+    }
+
+    .btn-txt.alt:hover,
+    .btn-txt.alt:active,
+    .btn-txt.alt:focus {
+        background-color: transparent;
+    }
+}
+
+/* ↳ Botão Texto - Alto Contraste */
+.alto-contraste .btn-txt,
+.alto-contraste .btn-txt.alt {
+    background-color: transparent;
+    color: var(--cor-ac-amarelo);
+}
+
+.alto-contraste .btn-txt:hover,
+.alto-contraste .btn-txt:active,
+.alto-contraste .btn-txt.alt:hover,
+.alto-contraste .btn-txt.alt:active {
+    outline: 1px solid var(--cor-ac-amarelo);
+}
+
+.alto-contraste .btn-txt:focus,
+.alto-contraste .btn-txt.alt:focus {
+    outline: 2px solid var(--cor-ac-branco);
+}
+
+.alto-contraste .btn-txt:disabled,
+.alto-contraste .btn-txt.alt:disabled {
+    color: var(--cor-ac-branco);
+    background-color: transparent;
+    outline: none;
 }

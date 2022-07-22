@@ -1,0 +1,259 @@
+/* Cores exclusivas de botões: */
+:root {
+    /* Botão Preenchido */
+    --cor-btn-pre-hover: var(--primario20);
+    --cor-btn-pre-focus-outline: var(--primario20);
+    --cor-btn-pre-disabled: var(--neutro60);
+    --cor-btn-pre-sobre-disabled: var(--cor-sobre-fundo);
+
+    /* Botão Contorno */
+    --cor-btn-cont-hover: rgba(0, 99, 153, 0.08);
+    --cor-btn-cont-focus-outline: var(--primario20);
+    --cor-btn-cont-sobre-disabled: var(--neutro40);
+
+    /* Botão Texto */
+    --cor-btn-txt-hover: rgba(0, 99, 153, 0.08);
+    --cor-btn-txt-focus-outline: var(--primario20);
+    --cor-btn-txt-sobre-disabled: var(--neutro40);
+
+    /*** Botões alternativos ***/
+    /* Botão Preenchido Alternativo */
+    --cor-btn-pre-alt-hover: var(--secundario40);
+    --cor-btn-pre-alt-focus-outline: var(--secundario95);
+    --cor-btn-pre-alt-disabled: var(--neutro60);
+    --cor-btn-pre-alt-sobre-disabled: var(--cor-sobre-fundo);
+
+    /* Botão Contorno Alternativo */
+    --cor-btn-cont-alt-focus-outline: var(--secundario95);
+    --cor-btn-cont-alt-disabled-outline: var(--neutro70);
+    --cor-btn-cont-alt-sobre-disabled: var(--neutro70);
+
+    /* Botão Texto Alternativo */
+    --cor-btn-txt-alt-focus-outline: var(--secundario95);
+    --cor-btn-txt-alt-sobre-disabled: var(--neutro70);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        /* Botão Preenchido */
+        --cor-btn-pre-hover: var(--primario90);
+        --cor-btn-pre-focus-outline: var(--primario100);
+        --cor-btn-pre-disabled: rgba(245, 243, 240, 0.12);
+        --cor-btn-pre-sobre-disabled: var(--neutro40);
+
+        /* Botão Contorno */
+        --cor-btn-cont-hover: rgba(102, 201, 255, 0.08);
+        --cor-btn-cont-focus-outline: var(--primario100);
+        --cor-btn-cont-sobre-disabled: var(--neutro60);
+
+        /* Botão Texto */
+        --cor-btn-txt-hover: rgba(102, 201, 255, 0.08);
+        --cor-btn-txt-focus-outline: var(--primario100);
+        --cor-btn-txt-sobre-disabled: var(--neutro60);
+
+        /*** Botões alternativos ***/
+        /* Botão Preenchido Alternativo */
+        --cor-btn-pre-alt-hover: var(--secundario50);
+        --cor-btn-pre-alt-focus-outline: var(--secundario95);
+        --cor-btn-pre-alt-disabled: var(--neutro30);
+        --cor-btn-pre-alt-sobre-disabled: var(--neutro70);
+
+        /* Botão Contorno Alternativo */
+        --cor-btn-cont-alt-focus-outline: var(--secundario95);
+        --cor-btn-cont-alt-disabled-outline: var(--neutro70);
+        --cor-btn-cont-alt-sobre-disabled: var(--neutro70);
+
+        /* Botão Texto Alternativo */
+        --cor-btn-txt-alt-focus-outline: var(--secundario95);
+        --cor-btn-txt-alt-sobre-disabled: var(--neutro60);
+    }
+}
+
+body.alto-contraste {
+    /* Botão Preenchido */
+    --cor-btn-pre-hover: var(--cor-ac-preto);
+    --cor-btn-pre-focus-outline: var(--cor-ac-amarelo);
+    --cor-btn-pre-disabled: var(--cor-ac-preto);
+    --cor-btn-pre-sobre-disabled: var(--cor-ac-branco);
+}
+
+button {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 8px 24px;
+    gap: 8px;
+    border: none;
+    border-radius: var(--raio-borda);
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    vertical-align: middle;
+    color: inherit;
+}
+
+button > i {
+    height: 24px;
+}
+
+button > i:first-child {
+    margin-left: -0.3em;
+}
+
+button.so-icone {
+    padding: 8px;
+}
+
+button.so-icone > i:first-child {
+    margin-left: 0;
+}
+
+/*** BOTÃO PREENCHIDO ***/
+.btn-pre {
+    background-color: var(--cor-primaria);
+    color: var(--cor-sobre-primaria);
+}
+
+.btn-pre:hover,
+.btn-pre:active {
+    background-color: var(--cor-btn-pre-hover);
+}
+
+.btn-pre:focus {
+    outline: 2px solid var(--cor-btn-pre-focus-outline);
+    outline-offset: -1px;
+    background-color: var(--cor-primaria);
+}
+
+.btn-pre:disabled {
+    background-color: var(--cor-btn-pre-disabled);
+    color: var(--cor-sobre-fundo);
+}
+
+/*** BOTÃO CONTORNO ***/
+.btn-cont {
+    background-color: transparent;
+    color: var(--cor-primaria);
+    outline: 1px solid var(--cor-primaria);
+    outline-offset: -1px;
+}
+
+.btn-cont:hover,
+.btn-cont:active {
+    background-color: var(--cor-btn-cont-hover);
+}
+
+.btn-cont:focus {
+    background-color: var(--cor-btn-cont-hover);
+    outline: 2px solid var(--cor-btn-cont-focus-outline);
+    outline-offset: -1px;
+}
+
+.btn-cont:disabled {
+    outline: 1px solid var(--cor-contorno);
+    color: var(--cor-btn-cont-sobre-disabled);
+    background-color: transparent;
+}
+
+/*** BOTÃO TEXTO ***/
+.btn-txt {
+    background-color: transparent;
+    color: var(--cor-primaria);
+    outline-offset: -2px;
+    padding: 8px 16px;
+}
+
+.btn-txt:hover,
+.btn-txt:active {
+    background-color: var(--cor-btn-txt-hover);
+}
+
+.btn-txt:focus {
+    background-color: var(--cor-btn-txt-hover);
+    outline: 2px solid var(--cor-btn-txt-focus-outline);
+    outline-offset: -1px;
+}
+
+.btn-txt:disabled {
+    color: var(--cor-btn-txt-sobre-disabled);
+    background-color: transparent;
+}
+
+/*** BOTÕES ALTERNATIVOS ***/
+/*** BOTÃO PREENCHIDO ALTERNATIVO ***/
+.btn-pre-alt {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-sobre-secundaria);
+}
+
+.btn-pre-alt:hover,
+.btn-pre-alt:active {
+    background-color: var(--cor-btn-pre-alt-hover);
+}
+
+.btn-pre-alt:focus {
+    outline: 2px solid var(--cor-btn-pre-alt-focus-outline);
+    outline-offset: -1px;
+    background-color: var(--cor-secundaria);
+}
+
+.btn-pre-alt:disabled {
+    background-color: var(--cor-btn-pre-alt-disabled);
+    color: var(--cor-sobre-fundo);
+}
+
+/*** BOTÃO CONTORNO ALTERNATIVO ***/
+.btn-cont-alt {
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    outline: 1px solid var(--cor-secundaria);
+    outline-offset: -1px;
+}
+
+.btn-cont-alt:hover,
+.btn-cont-alt:active {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-sobre-secundaria);
+}
+
+.btn-cont-alt:focus {
+    background-color: transparent;
+    outline: 2px solid var(--cor-btn-cont-alt-focus-outline);
+    color: var(--cor-secundaria);
+    outline-offset: -1px;
+}
+
+.btn-cont-alt:disabled {
+    outline: 1px solid var(--cor-btn-cont-alt-disabled-outline);
+    color: var(--cor-btn-cont-alt-sobre-disabled);
+    background-color: transparent;
+}
+
+/*** BOTÃO TEXTO ***/
+.btn-txt-alt {
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    outline-offset: -2px;
+    padding: 8px 16px;
+}
+
+.btn-txt-alt:hover,
+.btn-txt-alt:active {
+    outline: 1px solid var(--cor-secundaria);
+}
+
+.btn-txt-alt:focus {
+    outline: 2px solid var(--cor-btn-txt-alt-focus-outline);
+    outline-offset: -1px;
+}
+
+.btn-txt-alt:disabled {
+    color: var(--cor-btn-txt-alt-sobre-disabled);
+}
+
+.btn-txt-alt:disabled:hover {
+    outline: 0px;
+}
