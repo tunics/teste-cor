@@ -8,21 +8,50 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2rem;
-    padding: var(--espaco-g);
+    gap: 1rem;
+    padding: var(--espaco-xg) var(--espaco-m);
+    border-radius: var(--raio-borda);
 }
 
 .card {
-    display: block;
-    padding: var(--espaco-m);
-    max-width: 300px;
+    width: 100%;
+    display: table-cell;
+    max-width: calc(100% / 2 - 16px / 2);
+    height: 100px;
     border-radius: var(--raio-borda);
+    padding: 1rem;
+    text-align: center;
+    vertical-align: center;
+}
+
+@media screen and (min-width: 599px) {
+    .card {
+        max-width: calc(100% / 3 - 1rem / 3 * 2);
+    }
+}
+
+@media screen and (min-width: 899px) {
+    .card {
+        max-width: calc(100% / 5 - 1rem / 5 * 4);
+    }
 }
 
 .bg-azul-correios {
     background-color: var(--primario20);
     color: var(--primario100);
     padding: 0.5rem;
+}
+
+.alto-contraste .bg-azul-correios {
+    background-color: var(--cor-ac-preto);
+    color: var(--cor-ac-branco);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    .bg-azul-correios {
+        background-color: var(--cor-superficie-var);
+        color: var(--cor-sobre-superficie-var);
+    }
 }
 
 section.container {
