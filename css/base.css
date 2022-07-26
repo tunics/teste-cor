@@ -11,6 +11,13 @@
     --espaco-g: 1.5rem;
     --espaco-xg: 2rem;
     --espaco-2xg: 3rem;
+
+    /* Tamanhos de telas para breakpoints */
+    --tela-xp: 599px;
+    --tela-p: 600px;
+    --tela-m: 900px;
+    --tela-g: 1240px;
+    --tela-xg: 1440px;
 }
 
 body {

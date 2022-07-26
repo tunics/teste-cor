@@ -39,7 +39,6 @@ body {
 .bg-azul-correios {
     background-color: var(--primario20);
     color: var(--primario100);
-    padding: 0.5rem;
 }
 
 .alto-contraste .bg-azul-correios {

@@ -328,3 +328,115 @@ button.so-icone > i:first-child {
     background-color: transparent;
     outline: none;
 }
+
+/**** BOTÃO FLUTUANTE ****/
+.btn-flu,
+.btn-flu-g {
+    position: fixed;
+    bottom: var(--espaco-g);
+    right: var(--espaco-m);
+    background-color: var(--cor-secundaria);
+    color: var(--cor-sobre-secundaria);
+}
+
+.btn-flu-g {
+    padding: 16px 24px;
+}
+
+.btn-flu:hover,
+.btn-flu:active,
+.btn-flu-g:hover,
+.btn-flu-g:active {
+    background-color: var(--secundario40);
+}
+
+.btn-flu:focus,
+.btn-flu-g:focus {
+    outline: 2px solid var(--primario20);
+    background-color: var(--cor-secundaria);
+}
+
+.btn-flu:disabled,
+.btn-flu-g:disabled {
+    background-color: var(--neutro60);
+    color: var(--cor-sobre-fundo);
+}
+
+/* ↳ Botão Flutuante em telas muito pequenas */
+@media screen and (max-width: 599px) {
+    .btn-flu {
+        padding: 8px;
+    }
+
+    .btn-flu-g {
+        padding: 16px;
+    }
+
+    .btn-flu > i:first-child,
+    .btn-flu-g > i:first-child {
+        margin-left: 0;
+    }
+
+    .btn-flu span,
+    .btn-flu-g span {
+        display: none;
+        visibility: none;
+    }
+}
+
+/* ↳ Botão Flutuante - Tema Escuro */
+@media screen and (prefers-color-scheme: dark) {
+    .btn-flu:hover,
+    .btn-flu:active,
+    .btn-flu-g:hover,
+    .btn-flu-g:active {
+        background-color: var(--secundario50);
+    }
+
+    .btn-flu:focus,
+    .btn-flu-g:focus {
+        outline: 2px solid var(--primario100);
+    }
+
+    .btn-flu:disabled,
+    .btn-flu-g:disabled {
+        background-color: var(--neutro30);
+        color: var(--neutro70);
+    }
+}
+
+/* ↳ Botão Flutuante - Alto Contraste */
+.alto-contraste .btn-flu,
+.alto-contraste .btn-flu-g {
+    border: 0px;
+    background-color: var(--cor-ac-amarelo);
+    color: var(--cor-ac-preto);
+}
+
+.alto-contraste .btn-flu:hover,
+.alto-contraste .btn-flu:active,
+.alto-contraste .btn-flu-g:hover,
+.alto-contraste .btn-flu-g:active {
+    background-color: var(--cor-ac-amarelo);
+}
+
+.alto-contraste .btn-flu:focus,
+.alto-contraste .btn-flu-g:focus {
+    outline: 2px solid var(--cor-ac-branco);
+}
+
+.alto-contraste .btn-flu:disabled,
+.alto-contraste .btn-flu-g:disabled {
+    outline: 1px solid var(--cor-ac-branco);
+    background-color: var(--cor-ac-preto);
+    color: var(--cor-ac-branco);
+}
+
+/* ↳↳ Botão Flutuante - Alto Contraste - retira borda da elevação */
+.alto-contraste button.elev1,
+.alto-contraste button.elev2,
+.alto-contraste button.elev3,
+.alto-contraste button.elev4,
+.alto-contraste button.elev5 {
+    border: none;
+}
