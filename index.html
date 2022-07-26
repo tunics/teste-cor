@@ -12,39 +12,84 @@
     </head>
 
     <body class="bg-fundo">
-        <h1>Design System Correios</h1>
-        <h2>Tipografia</h2>
-        <h2 class="display-g">Display Grande</h2>
-        <h2 class="display-p">Display Pequeno</h2>
-        <h2 class="t1">Tamanho 1</h2>
-        <h2>Tamanho 2</h2>
-        <h3>Tamanho 3</h3>
-        <h4>Tamanho 4</h4>
-        <h5>Tamanho 5</h5>
-        <h6>Tamanho 6</h6>
-        <p class="subtitulo">Subtítulo</p>
-        <p class="subtitulo-p">Subtítulo Pequeno</p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            tincidunt augue mollis, lacinia tellus id, malesuada tellus.
-        </p>
-        <p class="pequeno">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            tincidunt augue mollis, lacinia tellus id, malesuada tellus.
-        </p>
-        <small
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Suspendisse tincidunt augue mollis, lacinia tellus id, malesuada
-            tellus.
-        </small>
-        <p class="mini">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            tincidunt augue mollis, lacinia tellus id, malesuada tellus.
-        </p>
-        <p class="legenda">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            tincidunt augue mollis, lacinia tellus id, malesuada tellus.
-        </p>
+        <div id="barra-acessibilidade" class="bg-superficie-var">
+            <button id="btn-acess" class="btn-txt so-icone">
+                <i class="ic-alto-contraste"></i>
+            </button>
+        </div>
+
+        <section class="container">
+            <h1 class="display-g">Design System Correios</h1>
+        </section>
+
+        <section class="container">
+            <h2>Tipografia</h2>
+            <p>São todas as propriedades que compoem um estilo tipográfico.</p>
+
+            <span class="linha"></span>
+
+            <h3>Display</h3>
+            <p>São utilizados em títulos com grande destaque.</p>
+            <p class="display-g">Display Grande (46.18/48)</p>
+            <p class="display-p">Display Pequeno (32.44/40)</p>
+
+            <span class="linha"></span>
+
+            <h3>Títulos</h3>
+            <p>São utilizados para gerar a hierarquia de conteúdo da página.</p>
+            <p class="t1">Tamanho 1 (28.8/32)</p>
+            <p class="t2">Tamanho 2 (25.6/32)</p>
+            <p class="t3">Tamanho 3 (22.8/24)</p>
+            <p class="t4">Tamanho 4 (20.3/24)</p>
+            <p class="t5">Tamanho 5 (18/24)</p>
+            <p class="t6">Tamanho 6 (16/24)</p>
+            <p class="subtitulo">Subtítulo</p>
+            <p class="subtitulo-p">Subtítulo Pequeno</p>
+
+            <span class="linha"></span>
+
+            <h3>Corpo</h3>
+            <p>
+                Sugestões de tamanhos que podem ser utilizado nas massas de
+                texto ou em pequenas informações.
+            </p>
+
+            <p>
+                <b>Corpo base (16/24)</b><br />
+                Tamanho padrão para textos em geral.<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse tincidunt augue mollis, lacinia tellus id, malesuada
+                tellus.
+            </p>
+            <p class="pequeno">
+                <b>Corpo pequeno (14/20)</b><br />
+                Utilizados em componentes em tenha necessidadede um texto
+                menor.<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse tincidunt augue mollis, lacinia tellus id, malesuada
+                tellus.
+            </p>
+            <p class="mini">
+                <b>Corpo mini (12/16)</b><br />
+                Utilizados em textos extremamente pequenos.
+            </p>
+
+            <span class="linha"></span>
+
+            <h3>Legenda</h3>
+            <p>
+                Texto que acompanham imagens, gráficos ou campos, tranzendo
+                informação sobre o conteúdo.
+            </p>
+
+            <figure>
+                <img src="https://source.unsplash.com/600x300" />
+                <figcaption>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse tincidunt augue mollis.
+                </figcaption>
+            </figure>
+        </section>
 
         <div class="flex">
             <p class="card bg-superficie elev1">
@@ -181,5 +226,12 @@
                 </button>
             </div>
         </div>
+
+        <script>
+            let acessBtn = document.getElementById("btn-acess");
+            acessBtn.addEventListener("click", function () {
+                document.body.classList.toggle("alto-contraste");
+            });
+        </script>
     </body>
 </html>

@@ -154,5 +154,5 @@ body.alto-contraste {
 
     --cor-contorno: var(--cor-ac-branco);
 
-    --cor-linha: var(--cor-ac-preto);
+    --cor-linha: var(--cor-ac-branco);
 }

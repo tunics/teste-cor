@@ -1,6 +1,9 @@
+@import url(css/base.css);
+
 body {
-    padding: 2rem;
+    margin-top: 40px;
 }
+
 .flex {
     display: flex;
     flex-direction: row;
@@ -20,4 +23,38 @@ body {
     background-color: var(--primario20);
     color: var(--primario100);
     padding: 0.5rem;
+}
+
+section.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+
+.linha {
+    display: block;
+    width: 100%;
+    margin: var(--espaco-xg) 0;
+    border-bottom: 1px solid var(--cor-linha);
+}
+
+figure {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 0;
+}
+
+figure > img {
+    width: 100%;
+    border-radius: var(--raio-borda);
+    overflow: hidden;
+}
+
+/* Barra de Acessibilidade */
+#barra-acessibilidade {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 0 1rem;
 }
