@@ -79,6 +79,13 @@ figure > img {
     overflow: hidden;
 }
 
+.btn-flu-ex .btn-flu,
+.btn-flu-ex .btn-flu-g {
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
 /* Barra de Acessibilidade */
 #barra-acessibilidade {
     position: fixed;

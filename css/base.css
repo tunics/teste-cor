@@ -1,5 +1,6 @@
 @import url(cores.css);
 @import url(botoes.css);
+@import url(inputs.css);
 
 :root {
     /* Raio da borda padrão*/
@@ -26,6 +27,19 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: var(--cor-fundo);
     color: var(--cor-sobre-fundo);
+}
+
+/* ACESSIBILIDADE */
+.esconder-visualmente {
+    /* Esconde visualmente elementos e mantém a leitura através de leitores de tela */
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 /**** TIPOGRAFIA ****/
@@ -121,7 +135,7 @@ p.mini {
 figcaption,
 .legenda {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 16px;
     font-style: italic;
 }
 

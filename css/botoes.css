@@ -125,6 +125,7 @@ button.so-icone > i:first-child {
 .alto-contraste .btn-pre.alt:focus {
     background-color: var(--cor-ac-preto);
     color: var(--cor-ac-amarelo);
+    outline: 2px solid var(--cor-ac-branco);
 }
 
 .alto-contraste .btn-pre:disabled,
@@ -337,6 +338,7 @@ button.so-icone > i:first-child {
     right: var(--espaco-m);
     background-color: var(--cor-secundaria);
     color: var(--cor-sobre-secundaria);
+    z-index: 10;
 }
 
 .btn-flu-g {
@@ -432,7 +434,7 @@ button.so-icone > i:first-child {
     color: var(--cor-ac-branco);
 }
 
-/* ↳↳ Botão Flutuante - Alto Contraste - retira borda da elevação */
+/* ↳ Botão Flutuante - Alto Contraste - retira borda da elevação */
 .alto-contraste button.elev1,
 .alto-contraste button.elev2,
 .alto-contraste button.elev3,

@@ -12,6 +12,11 @@
     </head>
 
     <body class="bg-fundo">
+        <noscript aria-label="Aviso de Javascript desabilitado">
+            Seu navegador não pode executar javascript. Alguns recursos podem
+            não funcionar corretamente.
+        </noscript>
+
         <div id="barra-acessibilidade" class="bg-superficie-var">
             <button id="btn-acess" class="btn-txt so-icone">
                 <i class="ic-alto-contraste"></i>
@@ -83,7 +88,10 @@
             </p>
 
             <figure>
-                <img src="https://source.unsplash.com/600x300" />
+                <img
+                    src="https://source.unsplash.com/600x300"
+                    alt="Imagem gerada aleatoriamente"
+                />
                 <figcaption>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse tincidunt augue mollis.
@@ -231,10 +239,112 @@
             <span class="linha"></span>
 
             <h3>Botões Flutuantes</h3>
+            <p>
+                Representa a ação mais importante da interface. Possui uma
+                posição fixa com elevação e dois tamanhos.
+            </p>
             <button class="btn-flu-g elev4">
                 <i class="ic-caixa"></i><span>Botão Flutuante</span>
             </button>
+
+            <div class="btn-flu-ex">
+                <button class="btn-flu elev4">
+                    <i class="ic-caixa"></i><span>Botão Flutuante</span>
+                </button>
+                <br /><br />
+                <button class="btn-flu-g elev4">
+                    <i class="ic-caixa"></i><span>Botão Flutuante</span>
+                </button>
+            </div>
+            <br />
         </section>
+
+        <section class="container">
+            <h2>Inputs</h2>
+
+            <form>
+                <div class="campo">
+                    <label class="subtitulo-p" for="txt-input">Nome:</label>
+                    <div class="input-container">
+                        <input
+                            type="text"
+                            id="txt-input"
+                            name="txt-input"
+                            placeholder="Nome"
+                        />
+                    </div>
+                    <div class="legenda">
+                        Mensagem de preenchimento do campo
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label class="subtitulo-p" for="txt-input">Nome:</label>
+                    <div class="input-container input-com-ic">
+                        <i class="ic-carta input-ic"></i>
+                        <input
+                            type="text"
+                            id="txt-input"
+                            name="txt-input"
+                            placeholder="Nome"
+                        />
+                    </div>
+                    <div class="legenda">
+                        Mensagem de preenchimento do campo
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label class="subtitulo-p" for="txt-input">Nome:</label>
+                    <div class="input-container input-com-btn">
+                        <input
+                            type="text"
+                            id="txt-input"
+                            name="txt-input"
+                            placeholder="Nome"
+                        />
+                        <button
+                            type="submit"
+                            class="btn-txt so-icone input-btn"
+                            value="pesquisar"
+                        >
+                            <i class="ic-lupa"></i>
+                        </button>
+                    </div>
+                    <div class="legenda">
+                        Mensagem de preenchimento do campo
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label class="subtitulo-p" for="txt-input">Nome:</label>
+                    <div class="input-container input-com-ic input-com-btn">
+                        <i class="ic-carta input-ic"></i>
+                        <input
+                            type="text"
+                            id="txt-input"
+                            name="txt-input"
+                            placeholder="Nome"
+                        />
+                        <button
+                            type="submit"
+                            class="btn-txt so-icone input-btn"
+                            value="pesquisar"
+                        >
+                            <i class="ic-lupa"></i>
+                        </button>
+                    </div>
+                    <div class="legenda">
+                        Mensagem de preenchimento do campo
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <br />
+        <br />
+        <br />
+        <br />
 
         <script>
             let acessBtn = document.getElementById("btn-acess");

@@ -1,0 +1,47 @@
+input {
+    border-radius: var(--raio-borda);
+    border: 1px solid var(--cor-contorno);
+    background-color: transparent;
+    padding: 8px 16px;
+    line-height: 1.5rem;
+    height: 56px;
+    width: 100%;
+}
+
+input:focus {
+    outline: 2px solid var(--cor-primaria);
+    outline-offset: -1px;
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.input-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.input-container:hover input {
+    border: 1px solid var(--cor-primaria);
+}
+
+.input-com-ic input {
+    padding-left: 48px;
+}
+
+.input-com-btn input {
+    padding-right: 56px;
+}
+
+.input-ic {
+    position: absolute;
+    left: 16px;
+    height: 24px;
+}
+
+.input-btn {
+    position: absolute;
+    right: 8px;
+}
