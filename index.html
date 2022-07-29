@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/icones-correios.css" />
         <link rel="stylesheet" href="exemplo.css" />
+
         <title>Design System Correios</title>
     </head>
 
@@ -261,10 +262,15 @@
 
         <section class="container">
             <h2>Inputs</h2>
-
+            <br />
+            <h3>Tipo texto</h3>
+            <p>Com botões e ícones</p>
             <form>
-                <div class="campo">
-                    <label class="subtitulo-p" for="txt-input">Nome:</label>
+                <div class="campo-txt">
+                    <label class="subtitulo-p" for="txt-input">
+                        Label:
+                        <a href="google.com">Teste</a></label
+                    >
                     <div class="input-container">
                         <input
                             type="text"
@@ -278,8 +284,8 @@
                     </div>
                 </div>
 
-                <div class="campo">
-                    <label class="subtitulo-p" for="txt-input">Nome:</label>
+                <div class="campo-txt">
+                    <label class="subtitulo-p" for="txt-input">Label:</label>
                     <div class="input-container input-com-ic">
                         <i class="ic-carta input-ic"></i>
                         <input
@@ -294,8 +300,8 @@
                     </div>
                 </div>
 
-                <div class="campo">
-                    <label class="subtitulo-p" for="txt-input">Nome:</label>
+                <div class="campo-txt">
+                    <label class="subtitulo-p" for="txt-input">Label:</label>
                     <div class="input-container input-com-btn">
                         <input
                             type="text"
@@ -316,8 +322,8 @@
                     </div>
                 </div>
 
-                <div class="campo">
-                    <label class="subtitulo-p" for="txt-input">Nome:</label>
+                <div class="campo-txt">
+                    <label class="subtitulo-p" for="txt-input">Label:</label>
                     <div class="input-container input-com-ic input-com-btn">
                         <i class="ic-carta input-ic"></i>
                         <input
@@ -338,6 +344,106 @@
                         Mensagem de preenchimento do campo
                     </div>
                 </div>
+
+                <div class="campo-txt">
+                    <label class="subtitulo-p" for="txt-input">Label:</label>
+                    <div class="input-container input-com-ic input-com-btn">
+                        <i class="ic-carta input-ic"></i>
+                        <input
+                            type="text"
+                            id="txt-input"
+                            name="txt-input"
+                            placeholder="Nome"
+                            disabled
+                        />
+                        <button
+                            type="submit"
+                            class="btn-txt so-icone input-btn"
+                            value="pesquisar"
+                        >
+                            <i class="ic-lupa"></i>
+                        </button>
+                    </div>
+                    <div class="legenda">
+                        Mensagem de preenchimento do campo
+                    </div>
+                </div>
+
+                <div class="campo-txt">
+                    <label class="subtitulo-p" for="txt-input"
+                        >Label (Obrigatório):</label
+                    >
+                    <div class="input-container input-com-ic input-com-btn">
+                        <i class="ic-carta input-ic"></i>
+                        <input
+                            type="text"
+                            id="txt-input"
+                            name="txt-input"
+                            placeholder="Nome"
+                            required
+                        />
+                        <button
+                            type="submit"
+                            class="btn-txt so-icone input-btn"
+                            value="pesquisar"
+                            disabled
+                        >
+                            <i class="ic-lupa"></i>
+                        </button>
+                    </div>
+                    <div class="legenda">
+                        Mensagem de preenchimento do campo
+                    </div>
+                </div>
+
+                <br />
+                <h3>Tipo busca</h3>
+                <p>Com botões e ícones</p>
+
+                <div class="campo-txt">
+                    <label class="subtitulo-p" for="txt-input">Busca:</label>
+                    <div class="input-container input-com-ic input-com-btn">
+                        <i class="ic-carta input-ic"></i>
+                        <input
+                            type="search"
+                            id="input-srch"
+                            name="input-srch"
+                            placeholder="Nome"
+                        />
+                        <button
+                            type="submit"
+                            class="btn-txt so-icone input-btn"
+                            value="pesquisar"
+                        >
+                            <i class="ic-lupa"></i>
+                        </button>
+                    </div>
+                    <div class="legenda">
+                        Mensagem de informação sobre a busca
+                    </div>
+                </div>
+
+                <br />
+                <h3>Tipo email</h3>
+                <p>Com e sem ícone</p>
+
+                <div class="campo-txt">
+                    <label class="subtitulo-p" for="txt-input">Email:</label>
+                    <div class="input-container input-com-ic input-com-btn">
+                        <i class="ic-carta input-ic"></i>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="email@email.com"
+                        />
+                    </div>
+                    <div class="legenda">
+                        Mensagem de preenchimento do campo
+                    </div>
+                </div>
+
+                <button id="teste" class="btn-pre">Teste</button>
             </form>
         </section>
 
@@ -346,6 +452,7 @@
         <br />
         <br />
 
+        <script type="text/javascript" src="js/inputs.js"></script>
         <script>
             let acessBtn = document.getElementById("btn-acess");
             acessBtn.addEventListener("click", function () {
