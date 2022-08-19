@@ -26,8 +26,6 @@ const checkDisabledInputs = () => {
             campoBtn.setAttribute("disabled", "");
         } else if (campoBtn != null && input.disabled == false) {
             campoBtn.removeAttribute("disabled", "");
-        } else {
-            console.log(input);
         }
     });
 };

@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/inicio-reset.css" />
-        <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/icones-correios.css" />
+        <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="exemplo.css" />
 
         <title>Design System Correios</title>
@@ -287,7 +287,7 @@
                 <div class="campo-txt">
                     <label class="subtitulo-p" for="txt-input">Label:</label>
                     <div class="input-container input-com-ic">
-                        <i class="ic-carta input-ic"></i>
+                        <i class="ic-caixa input-ic"></i>
                         <input
                             type="text"
                             id="txt-input"
@@ -325,7 +325,7 @@
                 <div class="campo-txt">
                     <label class="subtitulo-p" for="txt-input">Label:</label>
                     <div class="input-container input-com-ic input-com-btn">
-                        <i class="ic-carta input-ic"></i>
+                        <i class="ic-rastreamento input-ic"></i>
                         <input
                             type="text"
                             id="txt-input"
@@ -348,7 +348,7 @@
                 <div class="campo-txt">
                     <label class="subtitulo-p" for="txt-input">Label:</label>
                     <div class="input-container input-com-ic input-com-btn">
-                        <i class="ic-carta input-ic"></i>
+                        <i class="ic-rastreamento input-ic"></i>
                         <input
                             type="text"
                             id="txt-input"
@@ -374,7 +374,7 @@
                         >Label (Obrigatório):</label
                     >
                     <div class="input-container input-com-ic input-com-btn">
-                        <i class="ic-carta input-ic"></i>
+                        <i class="ic-rastreamento input-ic"></i>
                         <input
                             type="text"
                             id="txt-input"
@@ -403,7 +403,7 @@
                 <div class="campo-txt">
                     <label class="subtitulo-p" for="txt-input">Busca:</label>
                     <div class="input-container input-com-ic input-com-btn">
-                        <i class="ic-carta input-ic"></i>
+                        <i class="ic-usuario input-ic"></i>
                         <input
                             type="search"
                             id="input-srch"
@@ -429,13 +429,36 @@
 
                 <div class="campo-txt">
                     <label class="subtitulo-p" for="txt-input">Email:</label>
-                    <div class="input-container input-com-ic input-com-btn">
+                    <div class="input-container input-com-ic">
                         <i class="ic-carta input-ic"></i>
                         <input
                             type="email"
                             id="email"
                             name="email"
                             placeholder="email@email.com"
+                            required
+                        />
+                    </div>
+                    <div class="legenda">
+                        Mensagem de preenchimento do campo
+                    </div>
+                </div>
+
+                <br />
+                <h3>Tipo telefone</h3>
+                <p>Com e sem ícone</p>
+
+                <div class="campo-txt">
+                    <label class="subtitulo-p" for="telefone">Telefone:</label>
+                    <div class="input-container input-com-ic">
+                        <i class="ic-telefone input-ic"></i>
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            placeholder="(00) 00000-0000"
+                            pattern="([0-9]{2}) [0-9]{5}-[0-9]{4}"
+                            required
                         />
                     </div>
                     <div class="legenda">

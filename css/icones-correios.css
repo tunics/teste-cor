@@ -1,11 +1,11 @@
 @font-face {
     font-family: "correios";
-    src: url("../font/correios.eot?9900571");
-    src: url("../font/correios.eot?9900571#iefix") format("embedded-opentype"),
-        url("../font/correios.woff2?9900571") format("woff2"),
-        url("../font/correios.woff?9900571") format("woff"),
-        url("../font/correios.ttf?9900571") format("truetype"),
-        url("../font/correios.svg?9900571#correios") format("svg");
+    src: url("../font/correios.eot?76420671");
+    src: url("../font/correios.eot?76420671#iefix") format("embedded-opentype"),
+        url("../font/correios.woff2?76420671") format("woff2"),
+        url("../font/correios.woff?76420671") format("woff"),
+        url("../font/correios.ttf?76420671") format("truetype"),
+        url("../font/correios.svg?76420671#correios") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'correios';
-    src: url('../font/correios.svg?9900571#correios') format('svg');
+    src: url('../font/correios.svg?76420671#correios') format('svg');
   }
 }
 */
@@ -25,6 +25,7 @@
     font-style: normal;
     font-weight: normal;
     speak: never;
+    font-size: 1.5em;
 
     display: inline-block;
     text-decoration: inherit;
@@ -41,9 +42,10 @@
 
     /* Animation center compensation - margins should be symmetric */
     /* remove if not needed */
+    /* margin-left: 0.2em; */
 
     /* you can be more comfortable with increased icons size */
-    font-size: 150%;
+    /* font-size: 120%; */
 
     /* Font smoothing. That was taken from TWBS */
     -webkit-font-smoothing: antialiased;
@@ -53,597 +55,678 @@
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.ic-adicionar-circulo:before {
+.ic-seta-circulo-es:before {
     content: "\e800";
 } /* '' */
-.ic-agencia:before {
+.ic-seta-direita:before {
     content: "\e801";
 } /* '' */
-.ic-agencia-2:before {
+.ic-seta-esquerda:before {
     content: "\e802";
 } /* '' */
-.ic-agencia-favorita:before {
+.ic-smile:before {
     content: "\e803";
 } /* '' */
-.ic-agenda:before {
+.ic-smile-alegre:before {
     content: "\e804";
 } /* '' */
-.ic-agendamento:before {
+.ic-smile-confuso:before {
     content: "\e805";
 } /* '' */
-.ic-ajuste-horizontal:before {
+.ic-smile-serio:before {
     content: "\e806";
 } /* '' */
-.ic-ajustes:before {
+.ic-smile-triste:before {
     content: "\e807";
 } /* '' */
-.ic-ajuste-vertical:before {
+.ic-som:before {
     content: "\e808";
 } /* '' */
-.ic-alerta:before {
+.ic-som-baixo:before {
     content: "\e809";
 } /* '' */
-.ic-alto-contraste:before {
+.ic-stop:before {
     content: "\e80a";
 } /* '' */
-.ic-ampulheta:before {
+.ic-suspender:before {
     content: "\e80b";
 } /* '' */
-.ic-ampulheta-base:before {
+.ic-teclado-2:before {
     content: "\e80c";
 } /* '' */
-.ic-ampulheta-topo:before {
+.ic-tablet:before {
     content: "\e80d";
 } /* '' */
-.ic-arquivos:before {
+.ic-teclado:before {
     content: "\e80e";
 } /* '' */
-.ic-atendimento:before {
+.ic-telefone:before {
     content: "\e80f";
 } /* '' */
-.ic-atendimento-2:before {
+.ic-tema:before {
     content: "\e810";
 } /* '' */
-.ic-atomo:before {
+.ic-tesoura:before {
     content: "\e811";
 } /* '' */
-.ic-aviaozinho-voltar:before {
+.ic-tributos:before {
     content: "\e812";
 } /* '' */
-.ic-aviaozionho-espera:before {
+.ic-tubo-45:before {
     content: "\e813";
 } /* '' */
-.ic-aviso-recebimento:before {
+.ic-tubo-ensaio:before {
     content: "\e814";
 } /* '' */
-.ic-backspace:before {
+.ic-tv:before {
     content: "\e815";
 } /* '' */
-.ic-balao:before {
+.ic-tv-video:before {
     content: "\e816";
 } /* '' */
-.ic-busca-cep:before {
+.ic-upload:before {
     content: "\e817";
 } /* '' */
-.ic-cadeado:before {
+.ic-usuario:before {
     content: "\e818";
 } /* '' */
-.ic-cadeado-aberto:before {
+.ic-usuario-adicionar:before {
     content: "\e819";
 } /* '' */
-.ic-caixa:before {
+.ic-usuario-excluir:before {
     content: "\e81a";
 } /* '' */
-.ic-caixa-aberta:before {
+.ic-usuario-vinculado:before {
     content: "\e81b";
 } /* '' */
-.ic-calculadora:before {
+.ic-vinculo:before {
     content: "\e81c";
 } /* '' */
-.ic-camera:before {
+.ic-visto:before {
     content: "\e81d";
 } /* '' */
-.ic-caminhao:before {
+.ic-visto-circulo:before {
     content: "\e81e";
 } /* '' */
-.ic-caminhao-seta:before {
+.ic-visto-simples:before {
     content: "\e81f";
 } /* '' */
-.ic-cancelar-pacote:before {
+.ic-visualizar:before {
     content: "\e820";
 } /* '' */
-.ic-carrinho:before {
+.ic-a-a-z:before {
     content: "\e821";
 } /* '' */
-.ic-carta:before {
+.ic-aceitar:before {
     content: "\e822";
 } /* '' */
-.ic-carta-aberta:before {
+.ic-acompanhar:before {
     content: "\e823";
 } /* '' */
-.ic-cartao:before {
+.ic-adicionar-agenda:before {
     content: "\e824";
 } /* '' */
-.ic-carta-vazia:before {
+.ic-acessibilidade:before {
     content: "\e825";
 } /* '' */
-.ic-carteira:before {
+.ic-adicionar:before {
     content: "\e826";
 } /* '' */
-.ic-catalogo:before {
+.ic-adicionar-circulo:before {
     content: "\e827";
 } /* '' */
-.ic-categorias:before {
+.ic-agencia-2:before {
     content: "\e828";
 } /* '' */
-.ic-categorias-2:before {
+.ic-agencia:before {
     content: "\e829";
 } /* '' */
-.ic-celular:before {
+.ic-agencia-favorita:before {
     content: "\e82a";
 } /* '' */
-.ic-certificado-digital:before {
+.ic-agenda:before {
     content: "\e82b";
 } /* '' */
-.ic-cilindro:before {
+.ic-ajuste-horizontal:before {
     content: "\e82c";
 } /* '' */
-.ic-clique-retire:before {
+.ic-agendamento:before {
     content: "\e82d";
 } /* '' */
-.ic-codigo-barra:before {
+.ic-ajustes:before {
     content: "\e82e";
 } /* '' */
-.ic-compartilhar:before {
+.ic-ajuste-vertical:before {
     content: "\e82f";
 } /* '' */
-.ic-compartilhar-2:before {
+.ic-alerta:before {
     content: "\e830";
 } /* '' */
-.ic-configuracoes:before {
+.ic-alto-contraste:before {
     content: "\e831";
 } /* '' */
-.ic-contrato:before {
+.ic-ampulheta:before {
     content: "\e832";
 } /* '' */
-.ic-conversa:before {
+.ic-ampulheta-base:before {
     content: "\e833";
 } /* '' */
-.ic-cortesia:before {
+.ic-ampulheta-topo:before {
     content: "\e834";
 } /* '' */
-.ic-cronometro:before {
+.ic-anexo:before {
     content: "\e835";
 } /* '' */
-.ic-denuncia:before {
+.ic-anterior:before {
     content: "\e836";
 } /* '' */
-.ic-destaque:before {
+.ic-arquivos:before {
     content: "\e837";
 } /* '' */
-.ic-destaque-grande:before {
+.ic-atendimento:before {
     content: "\e838";
 } /* '' */
-.ic-diminuir:before {
+.ic-atendimento-2:before {
     content: "\e839";
 } /* '' */
-.ic-diminuir-circulo:before {
+.ic-atomo:before {
     content: "\e83a";
 } /* '' */
-.ic-dinheiro:before {
+.ic-aviaozinho-voltar:before {
     content: "\e83b";
 } /* '' */
-.ic-disputa:before {
+.ic-aviaozionho-espera:before {
     content: "\e83c";
 } /* '' */
-.ic-disputa-aprovar:before {
+.ic-aviso-recebimento:before {
     content: "\e83d";
 } /* '' */
-.ic-documento:before {
+.ic-backspace:before {
     content: "\e83e";
 } /* '' */
-.ic-documento-adicionar:before {
+.ic-balao:before {
     content: "\e83f";
 } /* '' */
-.ic-documento-alerta:before {
+.ic-busca-cep:before {
     content: "\e840";
 } /* '' */
-.ic-documentos-alerta:before {
+.ic-cadeado-aberto:before {
     content: "\e841";
 } /* '' */
-.ic-documentos-aprovar:before {
+.ic-cadeado:before {
     content: "\e842";
 } /* '' */
-.ic-documento-vincular:before {
+.ic-caixa:before {
     content: "\e843";
 } /* '' */
-.ic-download:before {
+.ic-caixa-aberta:before {
     content: "\e844";
 } /* '' */
-.ic-duvida:before {
+.ic-calculadora:before {
     content: "\e845";
 } /* '' */
-.ic-duvida-circulo:before {
+.ic-caminhao:before {
     content: "\e846";
 } /* '' */
-.ic-editar:before {
+.ic-camera:before {
     content: "\e847";
 } /* '' */
-.ic-empresa:before {
+.ic-carrinho:before {
     content: "\e848";
 } /* '' */
-.ic-enter:before {
+.ic-cancelar-pacote:before {
     content: "\e849";
 } /* '' */
-.ic-entrar:before {
+.ic-carta:before {
     content: "\e84a";
 } /* '' */
-.ic-enviar-aviaozinho:before {
+.ic-carta-aberta:before {
     content: "\e84b";
 } /* '' */
-.ic-envio:before {
+.ic-cartao:before {
     content: "\e84c";
 } /* '' */
-.ic-erlenmeyer:before {
+.ic-carta-vazia:before {
     content: "\e84d";
 } /* '' */
-.ic-estrela:before {
+.ic-carteira:before {
     content: "\e84e";
 } /* '' */
-.ic-etiqueta:before {
+.ic-catalogo:before {
     content: "\e84f";
 } /* '' */
-.ic-etiqueta-codigo:before {
+.ic-categorias:before {
     content: "\e850";
 } /* '' */
-.ic-excluir:before {
+.ic-categorias-2:before {
     content: "\e851";
 } /* '' */
-.ic-excluir-agenda:before {
+.ic-categorias-3:before {
     content: "\e852";
 } /* '' */
-.ic-excluir-circulo:before {
+.ic-caminhao-seta:before {
     content: "\e853";
 } /* '' */
-.ic-expandir:before {
+.ic-celular:before {
     content: "\e854";
 } /* '' */
-.ic-fatura:before {
+.ic-cilindro:before {
     content: "\e855";
 } /* '' */
-.ic-ff-rw:before {
+.ic-certificado-digital:before {
     content: "\e856";
 } /* '' */
-.ic-filatelia:before {
+.ic-clipe:before {
     content: "\e857";
 } /* '' */
-.ic-filmadora:before {
+.ic-clique-retire:before {
     content: "\e858";
 } /* '' */
-.ic-filtro:before {
+.ic-codigo-barra:before {
     content: "\e859";
 } /* '' */
-.ic-girar-anti:before {
+.ic-compartilhar:before {
     content: "\e85a";
 } /* '' */
-.ic-girar-horario:before {
+.ic-compartilhar-2:before {
     content: "\e85b";
 } /* '' */
-.ic-globo:before {
+.ic-contrato:before {
     content: "\e85c";
 } /* '' */
-.ic-grafico:before {
+.ic-contrato-encerrado:before {
     content: "\e85d";
 } /* '' */
-.ic-grafico-2:before {
+.ic-conversa:before {
     content: "\e85e";
 } /* '' */
-.ic-grafico-pizza:before {
+.ic-copiar:before {
     content: "\e85f";
 } /* '' */
-.ic-grupo:before {
+.ic-configuracoes:before {
     content: "\e860";
 } /* '' */
-.ic-headset:before {
+.ic-cortesia:before {
     content: "\e861";
 } /* '' */
-.ic-home:before {
+.ic-cronometro:before {
     content: "\e862";
 } /* '' */
-.ic-gaveta:before {
+.ic-denuncia:before {
     content: "\e863";
 } /* '' */
-.ic-home-2:before {
+.ic-destaque:before {
     content: "\e864";
 } /* '' */
-.ic-identidade:before {
+.ic-destaque-grande:before {
     content: "\e865";
 } /* '' */
-.ic-imagem:before {
+.ic-diminuir:before {
     content: "\e866";
 } /* '' */
-.ic-importar:before {
+.ic-diminuir-circulo:before {
     content: "\e867";
 } /* '' */
-.ic-imprensa:before {
+.ic-dinheiro:before {
     content: "\e868";
 } /* '' */
-.ic-imprimir:before {
+.ic-disputa:before {
     content: "\e869";
 } /* '' */
-.ic-informacao:before {
+.ic-disputa-aprovar:before {
     content: "\e86a";
 } /* '' */
-.ic-iphonex:before {
+.ic-documento:before {
     content: "\e86b";
 } /* '' */
-.ic-justica:before {
+.ic-documento-adicionar:before {
     content: "\e86c";
 } /* '' */
-.ic-ligar-desligar:before {
+.ic-documento-alerta:before {
     content: "\e86d";
 } /* '' */
-.ic-link:before {
+.ic-documentos-alerta:before {
     content: "\e86e";
 } /* '' */
-.ic-lista:before {
+.ic-documentos-aprovar:before {
     content: "\e86f";
 } /* '' */
-.ic-lista-abrir:before {
+.ic-documento-vincular:before {
     content: "\e870";
 } /* '' */
-.ic-lista-adicionar:before {
+.ic-documento-visto:before {
     content: "\e871";
 } /* '' */
-.ic-lista-fechar:before {
+.ic-download:before {
     content: "\e872";
 } /* '' */
-.ic-lixo:before {
+.ic-duvida:before {
     content: "\e873";
 } /* '' */
-.ic-localizar:before {
+.ic-duvida-circulo:before {
     content: "\e874";
 } /* '' */
-.ic-locker:before {
+.ic-editar:before {
     content: "\e875";
 } /* '' */
-.ic-lupa:before {
+.ic-empresa:before {
     content: "\e876";
 } /* '' */
-.ic-mapa:before {
+.ic-enter:before {
     content: "\e877";
 } /* '' */
-.ic-marcador:before {
+.ic-entrar:before {
     content: "\e878";
 } /* '' */
-.ic-marcador-grande:before {
+.ic-enviar-aviaozinho:before {
     content: "\e879";
 } /* '' */
-.ic-menu-hamburguer:before {
+.ic-envio:before {
     content: "\e87a";
 } /* '' */
-.ic-menu-pontos-hor:before {
+.ic-erlenmeyer:before {
     content: "\e87b";
 } /* '' */
-.ic-menu-pontos-ver:before {
+.ic-estrela:before {
     content: "\e87c";
 } /* '' */
-.ic-monitor:before {
+.ic-etiqueta:before {
     content: "\e87d";
 } /* '' */
-.ic-mouse:before {
+.ic-etiqueta-codigo:before {
     content: "\e87e";
 } /* '' */
-.ic-mudo:before {
+.ic-excluir:before {
     content: "\e87f";
 } /* '' */
-.ic-mundo:before {
+.ic-excluir-agenda:before {
     content: "\e880";
 } /* '' */
-.ic-nao-visualizar:before {
+.ic-excluir-circulo:before {
     content: "\e881";
 } /* '' */
-.ic-negocios:before {
+.ic-expandir:before {
     content: "\e882";
 } /* '' */
-.ic-nova-postagem:before {
+.ic-fatura:before {
     content: "\e883";
 } /* '' */
-.ic-objeto-favorito:before {
+.ic-ff:before {
     content: "\e884";
 } /* '' */
-.ic-objeto-vinculado:before {
+.ic-filatelia:before {
     content: "\e885";
 } /* '' */
-.ic-ordem-alfabetica:before {
+.ic-filmadora:before {
     content: "\e886";
 } /* '' */
-.ic-ordem-inverter:before {
+.ic-filtro:before {
     content: "\e887";
 } /* '' */
-.ic-ordenar:before {
+.ic-gaveta:before {
     content: "\e888";
 } /* '' */
-.ic-organograma:before {
+.ic-gerente:before {
     content: "\e889";
 } /* '' */
-.ic-organograma-adicionar:before {
+.ic-girar-anti:before {
     content: "\e88a";
 } /* '' */
-.ic-ouvidoria:before {
+.ic-girar-horario:before {
     content: "\e88b";
 } /* '' */
-.ic-papeis:before {
+.ic-globo:before {
     content: "\e88c";
 } /* '' */
-.ic-pasta:before {
+.ic-grafico:before {
     content: "\e88d";
 } /* '' */
-.ic-pasta-aberta:before {
+.ic-grafico-2:before {
     content: "\e88e";
 } /* '' */
-.ic-pause:before {
+.ic-grafico-pizza:before {
     content: "\e88f";
 } /* '' */
-.ic-pin:before {
+.ic-grupo:before {
     content: "\e890";
 } /* '' */
-.ic-pin-documento:before {
+.ic-headset:before {
     content: "\e891";
 } /* '' */
-.ic-play:before {
+.ic-home:before {
     content: "\e892";
 } /* '' */
-.ic-play-video:before {
+.ic-home-2:before {
     content: "\e893";
 } /* '' */
-.ic-postagens:before {
+.ic-identidade:before {
     content: "\e894";
 } /* '' */
-.ic-precos-prazos:before {
+.ic-imagem:before {
     content: "\e895";
 } /* '' */
-.ic-pre-postagem:before {
+.ic-importar:before {
     content: "\e896";
 } /* '' */
-.ic-proibido:before {
+.ic-imprensa:before {
     content: "\e897";
 } /* '' */
-.ic-proximo:before {
+.ic-imprimir:before {
     content: "\e898";
 } /* '' */
-.ic-qr-code:before {
+.ic-informacao:before {
     content: "\e899";
 } /* '' */
-.ic-radio:before {
+.ic-iphonex:before {
     content: "\e89a";
 } /* '' */
-.ic-rastreamento:before {
+.ic-justica:before {
     content: "\e89b";
 } /* '' */
-.ic-recusar:before {
+.ic-ligar-desligar:before {
     content: "\e89c";
 } /* '' */
-.ic-redirecionar:before {
+.ic-link:before {
     content: "\e89d";
 } /* '' */
-.ic-relogio:before {
+.ic-lista:before {
     content: "\e89e";
 } /* '' */
-.ic-rfid:before {
+.ic-lista-abrir:before {
     content: "\e89f";
 } /* '' */
-.ic-sair:before {
+.ic-lista-adicionar:before {
     content: "\e8a0";
 } /* '' */
-.ic-senha:before {
+.ic-lista-fechar:before {
     content: "\e8a1";
 } /* '' */
-.ic-seta:before {
+.ic-lixo:before {
     content: "\e8a2";
 } /* '' */
-.ic-seta-circulo:before {
+.ic-localizar:before {
     content: "\e8a3";
 } /* '' */
-.ic-smile:before {
+.ic-locker:before {
     content: "\e8a4";
 } /* '' */
-.ic-smile-alegre:before {
+.ic-lupa:before {
     content: "\e8a5";
 } /* '' */
-.ic-smile-confuso:before {
+.ic-mapa:before {
     content: "\e8a6";
 } /* '' */
-.ic-smile-serio:before {
+.ic-marcador-abaixo:before {
     content: "\e8a7";
 } /* '' */
-.ic-smile-triste:before {
+.ic-marcador-acima:before {
     content: "\e8a8";
 } /* '' */
-.ic-som:before {
+.ic-marcador-direita:before {
     content: "\e8a9";
 } /* '' */
-.ic-som-baixo:before {
+.ic-marcador-esquerda:before {
     content: "\e8aa";
 } /* '' */
-.ic-stop:before {
+.ic-marcador-grande:before {
     content: "\e8ab";
 } /* '' */
-.ic-suspender:before {
+.ic-megafone:before {
     content: "\e8ac";
 } /* '' */
-.ic-tablet:before {
+.ic-menu-hamburguer:before {
     content: "\e8ad";
 } /* '' */
-.ic-teclado:before {
+.ic-menu-pontos-hor:before {
     content: "\e8ae";
 } /* '' */
-.ic-teclado-2:before {
+.ic-menu-pontos-ver:before {
     content: "\e8af";
 } /* '' */
-.ic-telefone:before {
+.ic-monitor:before {
     content: "\e8b0";
 } /* '' */
-.ic-tema:before {
+.ic-mouse:before {
     content: "\e8b1";
 } /* '' */
-.ic-tributos:before {
+.ic-mudo:before {
     content: "\e8b2";
 } /* '' */
-.ic-tubo-45:before {
+.ic-mundo:before {
     content: "\e8b3";
 } /* '' */
-.ic-tubo-ensaio:before {
+.ic-nao-visualizar:before {
     content: "\e8b4";
 } /* '' */
-.ic-tv:before {
+.ic-negocios:before {
     content: "\e8b5";
 } /* '' */
-.ic-tv-video:before {
+.ic-nova-postagem:before {
     content: "\e8b6";
 } /* '' */
-.ic-upload:before {
+.ic-objeto-favorito:before {
     content: "\e8b7";
 } /* '' */
-.ic-usuario:before {
+.ic-objeto-vinculado:before {
     content: "\e8b8";
 } /* '' */
-.ic-usuario-adicionar:before {
+.ic-ordem-alfabetica:before {
     content: "\e8b9";
 } /* '' */
-.ic-usuario-excluir:before {
+.ic-ordem-inverter:before {
     content: "\e8ba";
 } /* '' */
-.ic-usuario-vinculado:before {
+.ic-ordenar:before {
     content: "\e8bb";
 } /* '' */
-.ic-vinculo:before {
+.ic-organograma:before {
     content: "\e8bc";
 } /* '' */
-.ic-visto:before {
+.ic-organograma-adicionar:before {
     content: "\e8bd";
 } /* '' */
-.ic-visto-circulo:before {
+.ic-ouvidoria:before {
     content: "\e8be";
 } /* '' */
-.ic-visto-simples:before {
+.ic-papeis:before {
     content: "\e8bf";
 } /* '' */
-.ic-visualizar:before {
+.ic-pasta:before {
     content: "\e8c0";
 } /* '' */
-.ic-a-a-z:before {
+.ic-pasta-aberta:before {
     content: "\e8c1";
 } /* '' */
-.ic-aceitar:before {
+.ic-pause:before {
     content: "\e8c2";
 } /* '' */
-.ic-acompanhar:before {
+.ic-pin:before {
     content: "\e8c3";
 } /* '' */
-.ic-adicionar-agenda:before {
+.ic-pin-documento:before {
     content: "\e8c4";
 } /* '' */
-.ic-adicionar:before {
+.ic-play:before {
     content: "\e8c5";
 } /* '' */
+.ic-play-video:before {
+    content: "\e8c6";
+} /* '' */
+.ic-postagens:before {
+    content: "\e8c7";
+} /* '' */
+.ic-precos-prazos:before {
+    content: "\e8c8";
+} /* '' */
+.ic-pre-postagem:before {
+    content: "\e8c9";
+} /* '' */
+.ic-proibido:before {
+    content: "\e8ca";
+} /* '' */
+.ic-proximo:before {
+    content: "\e8cb";
+} /* '' */
+.ic-qr-code:before {
+    content: "\e8cc";
+} /* '' */
+.ic-radio:before {
+    content: "\e8cd";
+} /* '' */
+.ic-rastreamento:before {
+    content: "\e8ce";
+} /* '' */
+.ic-recusar:before {
+    content: "\e8cf";
+} /* '' */
+.ic-redirecionar:before {
+    content: "\e8d0";
+} /* '' */
+.ic-relogio:before {
+    content: "\e8d1";
+} /* '' */
+.ic-ressarcimento:before {
+    content: "\e8d2";
+} /* '' */
+.ic-rfid:before {
+    content: "\e8d3";
+} /* '' */
+.ic-rw:before {
+    content: "\e8d4";
+} /* '' */
+.ic-sair:before {
+    content: "\e8d5";
+} /* '' */
+.ic-senha:before {
+    content: "\e8d6";
+} /* '' */
+.ic-servicos:before {
+    content: "\e8d7";
+} /* '' */
+.ic-seta-abaixo:before {
+    content: "\e8d8";
+} /* '' */
+.ic-seta-acima:before {
+    content: "\e8d9";
+} /* '' */
+.ic-seta-circulo-ab:before {
+    content: "\e8da";
+} /* '' */
+.ic-seta-circulo-ac:before {
+    content: "\e8db";
+} /* '' */
+.ic-seta-circulo-bd:before {
+    content: "\e8dc";
+} /* '' */
+.ic-seta-circulo-cd:before {
+    content: "\e8dd";
+} /* '' */
+.ic-seta-circulo-ce:before {
+    content: "\e8de";
+} /* '' */
+.ic-seta-circulo-di:before {
+    content: "\e8df";
+} /* '' */
+.ic-seta-circulo-eb:before {
+    content: "\e8e0";
+} /* '' */
